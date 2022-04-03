@@ -13,6 +13,14 @@
       <_ContentIncludedByDefault Remove="MusicSchoolModel.Infrastructure\obj\project.assets.json" />
       <_ContentIncludedByDefault Remove="MusicSchoolModel.Infrastructure\obj\project.packagespec.json" />
       <_ContentIncludedByDefault Remove="MusicSchoolModel.Infrastructure\Properties\launchSettings.json" />
+      <_ContentIncludedByDefault Remove="MusicSchoolModel.Core\obj\MusicSchoolModel.Core.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="MusicSchoolModel.Core\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="MusicSchoolModel.Core\obj\project.packagespec.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="MusicSchoolModel.Api" />
+      <Folder Include="MusicSchoolModel.Infrastructure" />
     </ItemGroup>
 
 </Project>

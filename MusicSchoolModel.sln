@@ -2,6 +2,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicSchoolModel", "MusicSchoolModel.csproj", "{790B5C84-9F79-46F6-BA00-AE38EECFF80F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicSchoolModel.Infrastructure", "MusicSchoolModel.Infrastructure\MusicSchoolModel.Infrastructure.csproj", "{FDA4AC43-B42C-486E-A2AE-EAAD06B41F93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicSchoolModel.Core", "MusicSchoolModel.Core\MusicSchoolModel.Core.csproj", "{0AB576BE-3CF6-49FF-8A54-07EF3DC0A8AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicSchoolModel.Api", "MusicSchoolModel.Api\MusicSchoolModel.Api.csproj", "{849E3B33-664C-4283-A4E6-A5190D4AB116}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +18,17 @@ Global
 		{790B5C84-9F79-46F6-BA00-AE38EECFF80F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{790B5C84-9F79-46F6-BA00-AE38EECFF80F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{790B5C84-9F79-46F6-BA00-AE38EECFF80F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDA4AC43-B42C-486E-A2AE-EAAD06B41F93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDA4AC43-B42C-486E-A2AE-EAAD06B41F93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDA4AC43-B42C-486E-A2AE-EAAD06B41F93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDA4AC43-B42C-486E-A2AE-EAAD06B41F93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AB576BE-3CF6-49FF-8A54-07EF3DC0A8AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AB576BE-3CF6-49FF-8A54-07EF3DC0A8AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AB576BE-3CF6-49FF-8A54-07EF3DC0A8AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AB576BE-3CF6-49FF-8A54-07EF3DC0A8AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{849E3B33-664C-4283-A4E6-A5190D4AB116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{849E3B33-664C-4283-A4E6-A5190D4AB116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{849E3B33-664C-4283-A4E6-A5190D4AB116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{849E3B33-664C-4283-A4E6-A5190D4AB116}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
