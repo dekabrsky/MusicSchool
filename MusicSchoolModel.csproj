@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="MusicSchoolModel.Infrastructure\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="MusicSchoolModel.Infrastructure\appsettings.json" />
+      <_ContentIncludedByDefault Remove="MusicSchoolModel.Infrastructure\obj\MusicSchoolModel.Infrastructure.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="MusicSchoolModel.Infrastructure\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="MusicSchoolModel.Infrastructure\obj\project.packagespec.json" />
+      <_ContentIncludedByDefault Remove="MusicSchoolModel.Infrastructure\Properties\launchSettings.json" />
+    </ItemGroup>
+
+</Project>
