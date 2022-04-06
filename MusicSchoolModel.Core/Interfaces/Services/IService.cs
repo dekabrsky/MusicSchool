@@ -18,7 +18,7 @@ public interface IService<TEntity, in TCreateDto, in TUpdateDto, TFullDto, TShor
     Task<TFullDto> Find(long id);
 
     Task<List<TShortDto>> Query(
-        Filter<TEntity> filterCollection,
+        Filterable<TEntity> filterableCollection,
         Sorting sortDirection,
         TSortFields sortField,
         int skip = 0,

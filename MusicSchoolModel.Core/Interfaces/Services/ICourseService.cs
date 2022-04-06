@@ -13,5 +13,5 @@ public interface ICourseService: IService<
     ShortCourseDto, 
     SortFields>
 {
-    
+    Task UpdateIsOpen(long id, bool isOpen);
 }

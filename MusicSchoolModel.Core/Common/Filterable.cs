@@ -4,12 +4,12 @@ using MusicSchoolModel.Core.Domain.Abstractions;
 
 namespace MusicSchoolModel.Core.Common;
 
-public class Filter<TEntity> : IEnumerable<Expression<Func<TEntity, bool>>>
+public class Filterable<TEntity> : IEnumerable<Expression<Func<TEntity, bool>>>
     where TEntity : Entity
 {
     private List<Expression<Func<TEntity, bool>>> _filters = new List<Expression<Func<TEntity, bool>>>();
 
-    public Filter<TEntity> Add(Expression<Func<TEntity, bool>> filterExpression, object value)
+    public Filterable<TEntity> Add(Expression<Func<TEntity, bool>> filterExpression, object value)
     {
         if (value == null)
         {

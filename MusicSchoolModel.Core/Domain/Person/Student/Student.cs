@@ -1,7 +1,6 @@
 ﻿using MusicSchoolModel.Core.Domain.Abstractions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using MusicSchoolModel.Core.Domain.Person.Common.ValueObjects;
 
 namespace MusicSchoolModel.Core.Domain.Student;
 
