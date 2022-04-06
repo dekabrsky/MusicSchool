@@ -8,9 +8,6 @@
 
     <ItemGroup>
       <Folder Include="Common" />
-      <Folder Include="Domain\Course" />
-      <Folder Include="Domain\Student" />
-      <Folder Include="Domain\Teacher" />
       <Folder Include="Interfaces\Repositories" />
       <Folder Include="Interfaces\Services" />
       <Folder Include="Interfaces\Specifications" />

@@ -5,7 +5,8 @@ namespace MusicSchoolModel.Core.DTO.Teacher.Response;
 public class FullTeacherDto : FullStudentDto
 {
     public long Id { get; set; }
-    public string Name { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
     public long? CourseId { get; set; }
     public int StudentsCount { get; set; }
     public int MaxStudentsCount { get; set; }

@@ -1,20 +1,20 @@
 ﻿using MusicSchoolModel.Core.Domain.Abstractions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using MusicSchoolModel.Core.Student.Student.ValueObjects;
+using MusicSchoolModel.Core.Domain.Person.Common.ValueObjects;
 
-namespace Programming.Core.Domain.Student;
+namespace MusicSchoolModel.Core.Domain.Student;
 
 public class Student : Entity, IEntityTypeConfiguration<Student>
 {
     public Student() { }
     
-    public StudentName Name { get; private set; }
+    public PersonName Name { get; private set; }
 
     public long? TeacherId { get; set; }
-    // public Teacher.Teacher Teacher { get; set; }
+    public Teacher.Teacher Teacher { get; set; }
 
-    public Student(StudentName studentName, long? teacherId = null)
+    public Student(PersonName studentName, long? teacherId = null)
     {
         Name = studentName ?? throw new ArgumentNullException(nameof(studentName));
 
@@ -41,7 +41,7 @@ public class Student : Entity, IEntityTypeConfiguration<Student>
         });
     }
 
-    public void UpdateName(StudentName name)
+    public void UpdateName(PersonName name)
     {
         Name = name ?? throw new ArgumentNullException(nameof(name));
     }

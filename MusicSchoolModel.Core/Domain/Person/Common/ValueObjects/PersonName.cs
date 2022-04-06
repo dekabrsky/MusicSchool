@@ -1,16 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MusicSchoolModel.Core.Domain.Common.ValueObjects;
 
-namespace MusicSchoolModel.Core.Student.Student.ValueObjects;
-
 [Owned]
-public class StudentName
+public class PersonName
 {
-    protected StudentName()
-    {
-    }
+    protected PersonName() { }
 
-    public StudentName(Name firstName, Name lastName)
+    public PersonName(Name firstName, Name lastName)
     {
         FirstName = firstName ?? throw new ArgumentNullException(nameof(firstName));
         LastName = lastName ?? throw new ArgumentNullException(nameof(lastName));
@@ -23,7 +19,7 @@ public class StudentName
 
     public override bool Equals(object obj)
     {
-        return obj is StudentName personalName &&
+        return obj is PersonName personalName &&
                FirstName.Equals(personalName.FirstName) &&
                LastName.Equals(personalName.LastName) &&
                FullName.Equals(personalName.FullName);
