@@ -32,8 +32,13 @@ public class Course : Entity, IEntityTypeConfiguration<Course>
     public ICollection<Teacher.Teacher> Teachers { get; }
     public ICollection<Student.Student> Projects { get; }
 
-    public void ChangeName(Name name)
+    public void UpdateName(Name name)
     {
         Name = name ?? throw new ArgumentNullException(nameof(name));
+    }
+    
+    public void UpdateIsOpen(bool isOpen)
+    {
+        IsOpen = isOpen;
     }
 }

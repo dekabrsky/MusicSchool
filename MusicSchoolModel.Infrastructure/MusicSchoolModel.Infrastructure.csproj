@@ -7,11 +7,17 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Extensions" />
-      <Folder Include="Mapping" />
-      <Folder Include="Repositories" />
-      <Folder Include="Services" />
-      <Folder Include="Tools" />
+      <PackageReference Include="AutoMapper" Version="11.0.1" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
+      <PackageReference Include="EntityFrameworkCore.Triggers" Version="1.2.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MusicSchoolModel.Core\MusicSchoolModel.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="obj" />
     </ItemGroup>
 
 </Project>

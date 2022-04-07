@@ -1,4 +1,8 @@
+using MusicSchoolModel;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Host.ConfigureWebHostDefaults(webBuilder => { webBuilder.UseStartup<Startup>(); });
 
 // Add services to the container.
 builder.Services.AddRazorPages();
@@ -14,11 +18,8 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
 app.UseStaticFiles();
-
-app.UseRouting();
-
-app.UseAuthorization();
 
 app.MapRazorPages();
 

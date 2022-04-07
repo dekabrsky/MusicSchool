@@ -54,11 +54,11 @@ public class TeacherController : BaseController<CreateTeacherDto, UpdateTeacherD
     {
         var filterable = new Filterable<Teacher>()
             .Add(x => x.Id == id, id)
-            .Add(x => x.Name.Value.ToLower().Contains(name.ToLower()), name)
+            .Add(x => x.Name.FullName.ToLower().Contains(name.ToLower()), name)
             .Add(x => x.CreatedDate == createdDate, createdDate);
 
-        var teams = await _service.Query(filterable, sortDirection, sortField, skip, take);
+        var teachers = await _service.Query(filterable, sortDirection, sortField, skip, take);
 
-        return Ok(teams);
+        return Ok(teachers);
     }
 }

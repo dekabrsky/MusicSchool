@@ -7,10 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Extensions" />
-    </ItemGroup>
-
-    <ItemGroup>
         <PackageReference Include="AutoMapper" Version="11.0.1" />
         <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0">
@@ -22,7 +18,10 @@
 
     <ItemGroup>
         <ProjectReference Include="..\MusicSchoolModel.Core\MusicSchoolModel.Core.csproj" />
-        <ProjectReference Include="..\Programming.Infrastructure\Programming.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="obj" />
     </ItemGroup>
 
 </Project>

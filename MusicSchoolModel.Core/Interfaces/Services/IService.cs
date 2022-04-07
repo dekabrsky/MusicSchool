@@ -22,5 +22,5 @@ public interface IService<TEntity, in TCreateDto, in TUpdateDto, TFullDto, TShor
         Sorting sortDirection,
         TSortFields sortField,
         int skip = 0,
-        int take = 20);
+        int take = 15);
 }
