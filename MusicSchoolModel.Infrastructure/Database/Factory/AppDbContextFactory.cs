@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
+using MusicSchoolModel.Infrastructure.Database;
 
 namespace MusicSchoolModel.Infrastructure.Repositories;
 

@@ -1,4 +1,6 @@
-﻿namespace MusicSchoolModel.MusicSchoolModel.Api.Providers;
+﻿using Microsoft.Extensions.DependencyInjection;
+
+namespace MusicSchoolModel.MusicSchoolModel.Api.Providers;
 
 public static class ApiServiceProvider
 {

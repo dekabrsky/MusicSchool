@@ -9,15 +9,15 @@ using MusicSchoolModel.Core.Domain.Course;
 using MusicSchoolModel.Core.Domain.Student;
 using MusicSchoolModel.Core.Domain.Teacher;
 
-namespace MusicSchoolModel.Infrastructure.Repositories;
+namespace MusicSchoolModel.Infrastructure.Database;
 
-public class AppDbContext: DbContext
+public class AppDbContext : DbContext
 {
     public DbSet<Student> Students { get; set; }
     public DbSet<Teacher> Teachers { get; set; }
     public DbSet<Course> Courses { get; set; }
 
-    public AppDbContext(DbContextOptions options) : base(options) {}
+    public AppDbContext(DbContextOptions options) : base(options) { }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -40,12 +40,9 @@ public class AppDbContext: DbContext
             entry.Entity.ModifiedDate = DateTime.Now;
         };
 
-        Triggers<TEntity, AppDbContext>.Updating += entry =>
-        {
-            entry.Entity.ModifiedDate = DateTime.Now;
-        };
+        Triggers<TEntity, AppDbContext>.Updating += entry => { entry.Entity.ModifiedDate = DateTime.Now; };
     }
-    
+
     public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
     {
         return this.SaveChangesWithTriggersAsync(base.SaveChangesAsync, true, cancellationToken);

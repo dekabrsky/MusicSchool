@@ -1,5 +1,6 @@
 ﻿using MusicSchoolModel.Core.Domain.Course;
 using MusicSchoolModel.Core.Interfaces.Repositories;
+using MusicSchoolModel.Infrastructure.Database;
 
 namespace MusicSchoolModel.Infrastructure.Repositories;
 

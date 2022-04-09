@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using MusicSchoolModel.Infrastructure.Database;
 using MusicSchoolModel.Infrastructure.Mapping;
 using MusicSchoolModel.Infrastructure.Providers;
-using MusicSchoolModel.Infrastructure.Repositories;
 using MusicSchoolModel.MusicSchoolModel.Api.Providers;
 
 namespace MusicSchoolModel;

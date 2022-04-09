@@ -19,7 +19,10 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="MusicSchoolModel.Api\bin" />
+      <Folder Include="MusicSchoolModel.Core\bin" />
       <Folder Include="MusicSchoolModel.Infrastructure" />
+      <Folder Include="MusicSchoolModel.Infrastructure\bin" />
     </ItemGroup>
 
     <ItemGroup>

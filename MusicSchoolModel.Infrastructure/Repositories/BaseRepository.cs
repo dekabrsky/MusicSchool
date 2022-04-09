@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using MusicSchoolModel.Core.Domain.Abstractions;
 using MusicSchoolModel.Core.Interfaces.Repositories;
+using MusicSchoolModel.Infrastructure.Database;
 
 namespace MusicSchoolModel.Infrastructure.Repositories;
 
