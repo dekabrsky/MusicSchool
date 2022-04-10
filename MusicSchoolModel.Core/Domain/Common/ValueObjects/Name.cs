@@ -1,7 +1,9 @@
 ﻿using System;
+using Microsoft.EntityFrameworkCore;
 
 namespace MusicSchoolModel.Core.Domain.Common.ValueObjects;
 
+[Owned]
 public class Name
 {
     public string Value { get; }
