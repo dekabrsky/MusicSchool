@@ -1,4 +1,5 @@
-﻿using MusicSchoolModel.Core.DataTransfer.Student.Response;
+﻿using System;
+using MusicSchoolModel.Core.DataTransfer.Student.Response;
 
 namespace MusicSchoolModel.Core.DTO.Teacher.Response;
 

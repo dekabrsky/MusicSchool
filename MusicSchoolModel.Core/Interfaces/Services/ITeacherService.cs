@@ -5,13 +5,12 @@ using MusicSchoolModel.Core.DTO.Teacher.Response;
 
 namespace MusicSchoolModel.Core.Interfaces.Services;
 
-public interface ITeacherService: IService<
-    Teacher, 
-    CreateTeacherDto, 
-    UpdateTeacherDto, 
-    FullTeacherDto, 
-    ShortTeacherDto, 
+public interface ITeacherService : IService<
+    Teacher,
+    CreateTeacherDto,
+    UpdateTeacherDto,
+    FullTeacherDto,
+    ShortTeacherDto,
     SortFields>
 {
-    
 }

@@ -1,4 +1,6 @@
-﻿namespace MusicSchoolModel.Core.Domain.Common.ValueObjects;
+﻿using System;
+
+namespace MusicSchoolModel.Core.Domain.Common.ValueObjects;
 
 public class Name
 {

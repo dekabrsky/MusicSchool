@@ -1,4 +1,6 @@
-﻿namespace MusicSchoolModel.Core.Domain.Abstractions;
+﻿using System;
+
+namespace MusicSchoolModel.Core.Domain.Abstractions;
 
 public class Entity
 {

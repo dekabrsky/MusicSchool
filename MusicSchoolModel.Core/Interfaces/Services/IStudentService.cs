@@ -5,13 +5,12 @@ using MusicSchoolModel.Core.Domain.Student.Enums;
 
 namespace MusicSchoolModel.Core.Interfaces.Services;
 
-public interface IStudentService: IService<
-    Student, 
-    CreateStudentDto, 
-    UpdateStudentDto, 
-    FullStudentDto, 
-    ShortStudentDto, 
+public interface IStudentService : IService<
+    Student,
+    CreateStudentDto,
+    UpdateStudentDto,
+    FullStudentDto,
+    ShortStudentDto,
     SortFields>
 {
-    
 }

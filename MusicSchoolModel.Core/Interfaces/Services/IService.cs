@@ -1,4 +1,7 @@
-﻿using MusicSchoolModel.Core.Common;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using MusicSchoolModel.Core.Common;
 using MusicSchoolModel.Core.DataTransfer.Abstract;
 using MusicSchoolModel.Core.Domain.Abstractions;
 

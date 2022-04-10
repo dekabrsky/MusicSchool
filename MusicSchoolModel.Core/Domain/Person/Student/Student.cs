@@ -1,4 +1,5 @@
-﻿using MusicSchoolModel.Core.Domain.Abstractions;
+﻿using System;
+using MusicSchoolModel.Core.Domain.Abstractions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

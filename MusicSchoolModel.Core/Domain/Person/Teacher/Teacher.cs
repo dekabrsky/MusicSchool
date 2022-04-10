@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using MusicSchoolModel.Core.Domain.Abstractions;
 using MusicSchoolModel.Core.Domain.Common.ValueObjects;

@@ -55,5 +55,17 @@ public class Startup
         app.UseAuthorization();
 
         app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+        
+        app.UseHttpsRedirection();
+
+        app.UseStaticFiles();
+
+        //app.MapRazorPages();
+
+        app.UseRouting();
+
+        app.UseAuthorization();
+
+        app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
     }
 }
